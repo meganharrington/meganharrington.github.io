@@ -132,9 +132,10 @@ img {
 #mainnav a.icon {
   display: block;
   float: right;
+  font-size: 32px;
+  line-height: 100%;
   margin: 0;
   text-align: center;
-  width: 32px;
 }
 #mainnav.responsive {
   height: auto;
@@ -282,6 +283,9 @@ img {
   font-size: 14px;
 }
 /* Bio */
+#about{
+  padding: 24px 0;
+}
 #about h2{
   font-size: 22px;
   margin: 0 10%;
