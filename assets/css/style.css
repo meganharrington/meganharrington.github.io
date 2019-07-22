@@ -1,0 +1,1430 @@
+/* Universal Settings */
+body{
+  background-color: #FFFFFF;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+section{
+  padding: 48px 0;
+}
+h1{
+  color: #282828;
+  display: block;
+  font-family: minerva-modern;
+  font-size: 36px;
+  line-height: 138%;
+  margin: 0 auto 32px auto;
+  text-align: center;
+  width: 79.71%;
+}
+h2{
+  color: #282828;
+  display: block;
+  font-family: minerva-modern;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 138%;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  width: 79.71%;
+}
+h3{
+  color: #282828;
+  display: block;
+  font-family: minerva-modern;
+  font-size: 22px;
+  line-height: 138%;
+  margin: 0 auto;
+  text-align: center;
+  width: 79.71%;
+}
+h4{
+  color: #282828;
+  display: block;
+  font-family: open-sans;
+  font-size: 20px;
+  line-height: 159%;
+  margin: 0 auto 16px auto;
+  text-align: center;
+  width: 79.71%;
+}
+h5{
+  color: #282828;
+  font-family: minerva-modern;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+.button{
+  background-color: #C6EEE2;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #282828;
+  cursor: default;
+  display: block;
+  font-family: minerva-modern;
+  font-size: 20px;
+  height: 26px;
+  line-height: 138%;
+  margin: 0 auto;
+  padding: 7px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 228px;
+}
+.button:hover{
+  font-weight: bold;
+  background-color: #282828;
+  color: #FFFFFF;
+}
+.body1{
+  color: #282828;
+  font-family: open-sans;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: left;
+}
+.body2{
+  color: #282828;
+  display: block;
+  font-family: open-sans;
+  font-size: 16px;
+  line-height: 137.99%;
+  margin: 0 auto;
+  text-align: left;
+  width: 79.71%;
+}
+.border{
+  border-bottom: 4px solid #C6EEE2;
+}
+.caption{
+  color: #282828;
+  display: block;
+  font-family: open-sans;
+  font-size: 12px;
+  line-height: 136%;
+  margin: 0 auto;
+  text-align: center;
+  width: 79.71%;
+}
+.desktop{
+  display:none;
+}
+.inline:hover{
+  font-weight: bold;
+}
+/* Navbar */
+#mainnav {
+  background-color: #757575;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 56px;
+  padding: 8px 8% 16px 8%;
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 300;
+}
+#mainnav > a {
+  color: #FFFFFF;
+  display: block;
+  float: right;
+  font-family: open-sans;
+  font-size: 16px;
+  height: 30px;
+  line-height: 219%;
+  text-decoration: none;
+}
+#mainnav > a:nth-child(1) {
+  float: left;
+  width: 170px;
+}
+#mainnav > a:not(:first-child) {
+  display: none;
+}
+#mainnav > a.icon {
+  display: block;
+  float: right;
+  font-size: 32px;
+  line-height: 100%;
+  margin: 0;
+  text-align: center;
+}
+#mainnav.responsive {
+  height: auto;
+  position: relative;
+}
+#mainnav.responsive > a.icon {
+  padding: 8px 8% 16px 8%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+#mainnav.responsive > a {
+  display: block;
+  float: none;
+  text-align: left;
+}
+.dropdown{
+  display: none;
+}
+/* Footer */
+#footer{
+  background-color: #757575;
+  padding: 0;
+}
+#footer > img{
+  display: block;
+  margin: 0 auto 24px auto;
+  padding-top: 40px;
+  width: 295px;
+}
+#footer p{
+  color: #FFFFFF;
+  text-align: center;
+}
+#footer .body1{
+  margin: 0 auto;
+  width: 48.71%;
+}
+#footer div{
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 24px auto;
+  max-width: 267px;
+  width: 64.49%;
+}
+#footer div a{
+  text-align: center;
+  width: 45px;
+}
+#footer .caption{
+  padding-bottom: 8px;
+}
+/* Home Page */
+/* Opening Screen */
+#hello{
+  background-image: url("../images/homepage_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 207px;
+  max-height: 207px;
+  min-height: auto;
+}
+#hello h1{
+  color: #282828;
+  padding: 6vh 0 16px 50%;
+  text-align: left;
+  width: 170px;
+}
+#hello h4{
+  font-size: 16px;
+  padding-left: 50%;
+  width: 46.92%;
+}
+/* Cloud Collab Description */
+#cc{
+  background-color: #757575;
+}
+#cc img:nth-of-type(1){
+  display: block;
+  margin: 0 auto;
+  width: 79.1%;
+}
+#cc img:nth-of-type(2){
+  display: block;
+  margin: 0 auto;
+  width: 84.54%
+}
+#cc .body2{
+  color: #FFFFFF;
+}
+#cc .button{
+  display: block;
+  margin: 24px auto 0 auto;
+}
+/* Lets Get Personal */
+#personal .mobile{
+  display: flex;
+  flex-wrap: wrap;
+}
+#personal .mobile div{
+  width: 50%;
+}
+#personal img{
+  height: 100%;
+  margin-left: 32px;
+  max-width: 84%;
+}
+#personal h2{
+  font-size: 22px;
+  margin-top: 50%;
+  width: 89.29%;
+}
+#personal .button{
+  display: block;
+  margin: 24px auto 16px auto;
+}
+#personal .body2{
+  margin: 22px auto;
+  text-align: center;
+  width: 95.65%;
+}
+/* About Page */
+/* Opening Screen */
+#intro{
+  background-image: url("../images/about_header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 122px;
+  margin-top: 0;
+  padding: 0;
+}
+#intro h1{
+  color: #282828;
+  font-size: 24px;
+  padding-top: 8%;
+  text-align: center;
+}
+#intro h4{
+  font-size: 14px;
+}
+/* Bio */
+#about{
+  padding: 24px 0;
+}
+#about h2{
+  font-size: 22px;
+  margin: 0 10%;
+}
+#about img{
+  display: block;
+  margin: 45px auto;
+  max-width: 72.46%;
+}
+#about .body2{
+  margin-bottom: 29px;
+}
+/* Projects Page */
+/* Opening Image */
+img[alt="Hero Image"]{
+  max-height: 174px;
+}
+/* Cloud Collab Introduction */
+#cloudCollab img{
+  display: block;
+  margin: 0 auto;
+  width: 17%;
+}
+#cloudCollab img[alt="Cloud Collab script"]{
+  width: 52.9%;
+}
+#cloudCollab nav{
+  border-bottom: 4px solid #C6EEE2;
+  height: 41.85px;
+  margin: 56px auto 0px auto;
+  text-align: center;
+  width: 95.41%;
+}
+#cloudCollab nav a{
+  color: #282828;
+  font-family: open-sans;
+  font-size: 12px;
+  line-height: 19px;
+  margin: 0px 1.18%;
+  text-align: center;
+  text-decoration: none;
+}
+#cloudCollab nav a:hover {
+  text-decoration: underline;
+}
+#cloudCollab h4{
+  font-size: 16px;
+  margin: 24px auto 40px auto;
+}
+#cloudCollab .button{
+  margin-bottom: 24px;
+}
+#roles{
+  background-color: #F7F7F7;
+  display: block;
+}
+#roles article{
+  display: inline-block;
+  width: 100%;
+}
+#roles article:nth-of-type(2){
+  margin: 56px 0;
+}
+#roles img{
+  display: block;
+  margin: 0 auto;
+  max-width: 126px;
+}
+#roles article h2{
+  font-size: 28px;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  text-align: center;
+}
+#roles ul{
+  color: #282828;
+  font-family: open-sans;
+  font-size: 20px;
+  line-height: 35px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+/* The Challenge */
+#challenge{
+  background-image: url("../images/challenge_background_mobile.jpg");
+  background-size: cover;
+}
+#challenge h1{
+  color: #FFFFFF;
+}
+#challenge h4{
+  color: #FFFFFF;
+  text-align: left;
+}
+/* Solution */
+#solution h2{
+  margin-bottom: 0;
+}
+#solution img{
+  display: block;
+  margin: 0 auto;
+  width: 79.1%;
+}
+#solution .body2{
+  margin-top: 16px;
+}
+/* User Research */
+#userResearch{
+  background-color: #F7F7F7;
+  padding-bottom: 0;
+}
+#userResearch article img{
+  display: block;
+  margin: 0 auto;
+  width: 60.39%;
+}
+#userResearch article img + p:nth-of-type(1){
+  font-family: open-sans;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+#forms{
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 79.71%;
+}
+#userResearch ul{
+  display: block;
+  list-style-type: initial;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 79.71%;
+}
+#userResearch li{
+  margin: 0 0 20px 24px;
+}
+#userResearch li:nth-of-type(3){
+  margin-bottom: 8px;
+}
+/* Statistics */
+#stats{
+  background-color: #757575;
+}
+#stats h4{
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+#stats div{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 24px;
+}
+#stats h2{
+  color: #C6EEE2;
+  display: inline;
+  margin-right: 16px;
+  margin-top: 32px;
+  width: 18.84%;
+}
+#stats h3{
+  color: #FFFFFF;
+  display: inline;
+  margin-top: 32px;
+  text-align: left;
+  width: 73%;
+}
+#stats article:nth-of-type(2) h4{
+  margin: 32px auto 24px auto;
+}
+#stats .first{
+  margin-top: 0;
+}
+#stats .button{
+  margin: 32px auto 0 auto;
+}
+#stats .button:hover{
+  background-color: #FFFFFF;
+  color: #282828;
+}
+/* Competitive Analysis */
+#competitive h2{
+  margin-bottom: 0;
+}
+#competitive img{
+  display: block;
+  margin: 0 auto;
+  width: 78.63%;
+}
+#competitive p{
+  color: #282828;
+  display: block;
+  margin: 0 auto 29px auto;
+  width: 79.71%;
+}
+#competitive ul{
+  display: block;
+  list-style-type: initial;
+  margin: 0 auto;
+  width: 79.71%;
+}
+#competitive li{
+  color: #282828;
+  margin: 0 0 29px 24px;
+}
+#competitive a{
+  color: #282828;
+}
+/* User Personas */
+#personas{
+  background-color: #F7F7F7;
+}
+#personas h4{
+  margin-bottom: 24px;
+}
+#personas img{
+  display: block;
+  margin: 60px auto 0 auto;
+  width: 150px;
+}
+#personas article h2{
+  margin-top: 16px;
+}
+#personas article h4{
+  margin-bottom: 0;
+}
+#personas h6:nth-of-type(2){
+  color: #282828;
+  margin-top: 30px;
+}
+#personas .button{
+  margin-top: 56px;
+}
+/* User Stories */
+table{
+  border-collapse: collapse;
+  margin: 32px auto 0 auto;
+  width: 79.71%;
+}
+th{
+  color: #282828;
+  background-color: #C6EEE2;
+  font-family: minerva-modern;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+table .caption{
+  display: table-cell;
+}
+/* User Flows */
+#flows{
+  background-color: #757575;
+}
+#flows h4, #flows h2{
+  color: #FFFFFF;
+}
+#flows .body2{
+  color: #FFFFFF;
+}
+#flows .caption{
+  color: #FFFFFF;
+}
+#flows img{
+  display: block;
+  margin: 0 auto;
+}
+/* Wireframes */
+#wireframes{
+  background-color: #F7F7F7;
+  padding-bottom: 40px;
+}
+#wireframes a{
+  color: #282828;
+}
+#wireframes h4{
+  margin-bottom: 16px;
+}
+#wireframes img{
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 84.54%;
+}
+#wireframes .caption{
+  margin-bottom: 24px;
+}
+#wireframes .body2{
+  margin-bottom: 32px;
+  text-align: center;
+}
+/* Branding */
+#branding{
+  background-image: url("../images/branding_background_mobile.jpg");
+  background-size: cover;
+}
+#branding h1{
+  color: #FFFFFF;
+}
+#branding p{
+  color: #FFFFFF;
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+#branding .button{
+  margin-top: 32px;
+}
+/* Moodboard */
+#mood{
+  background-color: #F7F7F7;
+}
+#mood img{
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 250px;
+}
+#mood .body2{
+  text-align: center;
+}
+/* Logo */
+#logo img{
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 72.46%;
+}
+#logo .body2:nth-of-type(1){
+  margin-bottom: 29px;
+}
+/* Color Palette */
+#color{
+  background-color: #F7F7F7;
+}
+#color h2{
+  margin-bottom: 0;
+}
+#color img{
+  display: block;
+  margin: 48px auto 40px auto;
+  width: 61.11%;
+}
+#color p{
+  margin: 0 auto;
+  text-align: center;
+  width: 73.29%;
+}
+/* Typography */
+#type h2{
+  text-align: center;
+}
+#type .body2{
+  margin: 0 auto 32px auto;
+  text-align: center;
+  width: 66.1%;
+}
+#type img{
+  display: block;
+  margin: 0 auto;
+  width: 84.54%;
+}
+#type h1{
+  margin-top: 80px;
+}
+/* Iterations to Deliverables */
+#deliver{
+  background-image: url("../images/visual_design_background_mobile.png");
+  background-size: cover;
+}
+#deliver h1{
+  color: #FFFFFF;
+}
+#deliver .body2{
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+/* Sales Landing Page */
+#landing > img{
+  display: block;
+  margin: 0 auto;
+  width: 84.54%;
+}
+#landing div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+#landing article img{
+  width: 40px;
+}
+#landing div h2{
+  display: inline;
+  vertical-align: top;
+}
+#landing .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Dashboard */
+#dash{
+  background-color: #757575;
+}
+#dash h4, #dash h2, #dash .body2{
+  color: #FFFFFF;
+}
+#dash > img{
+  display: block;
+  margin: 0 auto;
+  width: 84.54%;
+}
+#dash div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+#dash article img{
+  width: 40px;
+}
+#dash div h2{
+  display: inline;
+  vertical-align: top;
+}
+#dash .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Modifying Modal Screens */
+#modal > img{
+  display: block;
+  margin: 0 auto;
+  width: 84.54%;
+}
+#modal div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+#modal article img{
+  width: 40px;
+}
+#modal div h2{
+  display: inline;
+  vertical-align: top;
+}
+#modal .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Conclusion */
+#conclusion{
+  background-color: #F7F7F7;
+}
+#conclusion p:nth-of-type(1){
+  margin-bottom: 22px;
+}
+/* Tablet Specific */
+/* Body1 Styles */
+#personal .body1{
+  width: 89.11%;
+}
+#about .body1{
+  margin-bottom: 29px;
+  width: 90.77%;
+}
+#solution .body1{
+  width: 80.83%;
+}
+#stories .body1{
+  margin: 0 auto 24px auto;
+  text-align: center;
+  width: 66.02%;
+}
+#flows .body1{
+  color: #FFFFFF;
+  margin: 0 auto;
+  width: 66.10%;
+}
+#wireframes .body1{
+  margin: 0 auto;
+  padding-bottom: 16px;
+  width: 65.86%;
+}
+#branding .body1{
+  margin: 0 auto 26px auto;
+  text-align: left;
+  width: 66.01%;
+}
+#mood .body1{
+  width: 81.44%;
+}
+#logo .body1:nth-of-type(1){
+  margin-bottom: 29px;
+}
+#type .body1{
+  margin: 0 auto 32px auto;
+  text-align: left;
+  width: 66.1%;
+}
+#deliver .body1{
+  color: #FFFFFF;
+  margin: 0 auto 40px auto;
+  width: 66.09%;
+}
+#landing .body1{
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+#dash .body1{
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+#modal .body1{
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+#conclusion .body1{
+  width: 98.34%;
+}
+/* Tablet Media Query */
+@media screen and (min-width: 600px){
+  /* Universal Styles */
+  section{
+    padding: 56px 0;
+  }
+  h1{
+    font-size: 62px;
+    width: 65.94%;
+  }
+  h2{
+    font-size: 32px;
+    text-align: left;
+  }
+  h3{
+    font-size: 28px;
+    text-align: left;
+  }
+  h4{
+    font-size: 20px;
+    text-align: left;
+  }
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  .desktop div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  /* Navbar */
+  #mainnav{
+    height: auto;
+    position: fixed;
+  }
+  #mainnav a{
+    text-align: center;
+    width: 11%;
+  }
+  #mainnav a:not(:first-child) {
+    display: block;
+  }
+  #mainnav a.icon {
+    display: none;
+  }
+  /* The dropdown container */
+  .dropdown {
+    display: block;
+    float: right;
+    height: 30px;
+    line-height: 219%;
+    overflow: hidden;
+    text-align: center;
+    width: 9.76%;
+  }
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    background-color: inherit;
+    border: none;
+    color: #FFFFFF;
+    font-family: open-sans; /* Important for vertical align on mobile phones */
+    font-size: 16px;
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    background-color: #757575;
+    display: none;
+    font-family: open-sans;
+    min-width: 160px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    z-index: 1;
+  }
+  /* Links inside the dropdown */
+  #mainnav .dropdown-content a {
+    color: #FFFFFF;
+    display: block;
+    float: none;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  #mainnav .dropdown-content a:hover {
+    background-color: #C6EEE2;
+    color: #282828;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .home{
+    margin-left: 0;
+  }
+  /* Footer */
+  #footer div{
+    max-width: auto;
+    width: 20.8%;
+  }
+  #footer .caption{
+    font-size: 14px;
+  }
+  /* Home Page */
+  /* Opening Image */
+  #hello{
+    height: 400px;
+    max-height: none;
+  }
+  #hello h1{
+    padding: 4% 0 16px 50%;
+    position: relative;
+    top: 55%;
+    transform: translateY(-55%);
+    width: auto;
+  }
+  #hello h4.desktop{
+    display: none;
+  }
+  #hello .desktop{
+    display: block;
+    margin: 0;
+  }
+  section.mobile{
+    display: block;
+    padding: 40px;
+  }
+  /* Cloud Collab Description */
+  #cc{
+    display: flex;
+    padding: 56px 0;
+  }
+  #cc article{
+    width: 50%;
+  }
+  #cc article:nth-of-type(3){
+    display: flex;
+  }
+  #cc img[alt="Cloud Collab logo"]{
+    margin: 0 16.17% 24px 16.17%;
+    width: 39.44%;
+  }
+  #cc .body1{
+    color: #FFFFFF;
+    margin: 0 auto;
+    width: 67.65%
+  }
+  #cc .caption{
+    color: #FFFFFF;
+    display: block;
+    margin: 14px auto 32px auto;
+    text-align: left;
+    width: 67.65%
+  }
+  #cc .button{
+    margin: 0 16.17%;
+  }
+  #cc img[alt="Cloud Collab Mockup"]{
+    align-self: center;
+    width: 96.67%;
+  }
+  /* Lets Get Personal */
+  #personal{
+    padding: 56px 0;
+  }
+  #personal .mobile{
+    display: none;
+  }
+  #personal .desktop{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 500px;
+    padding: 0;
+  }
+  #personal .desktop div{
+    width: 50%;
+  }
+  #personal img{
+    margin-left: 12.22%;
+    width: 72%;
+  }
+  #personal h2{
+    font-size: 32px;
+    margin: 0 0 32px 0;
+    text-align: left;
+  }
+  #personal .button{
+    margin: 40px 0;
+  }
+  /* About Page */
+  /* About Opening Image */
+  #intro{
+    height: auto;
+    margin-top: 48px;
+    width: 100%;
+  }
+  #intro h1{
+    font-size: 62px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-20%);
+  }
+  #intro h4{
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    transform: translateY(-150%);
+    width: auto;
+  }
+  /* Biography */
+  #about .desktop{
+    display: flex;
+    padding: 0 8.73% 0 4.68%;
+  }
+  #about .desktop div{
+    width: 50%;
+  }
+  #about h2{
+    font-size: 32px;
+    margin: 0 0 32px 0;
+    text-align: left;
+  }
+  #about img{
+    margin: 0 auto;
+    max-width: none;
+  }
+  /* Projects Page */
+  /* Work Opening Image */
+  img[alt="Hero Image"] {
+    max-height: none;
+  }
+  /* Cloud Collab Summary */
+  #cloudCollab img[alt="Cloud Collab script"]{
+    width: 35%;
+  }
+  #cloudCollab nav{
+    margin-top: 48px;
+    width: 65.94%;
+  }
+  #cloudCollab h4{
+    font-size: 20px;
+    margin: 32px auto 40px auto;
+    width: 65.94%;
+  }
+  #cloudCollab h2{
+    text-align: center;
+  }
+  #cloudCollab .button{
+    margin-bottom: 0;
+  }
+  #roles{
+    display: flex;
+  }
+  #roles img{
+    max-height: none;
+    width: 126px;
+  }
+  #roles article{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 33%;
+  }
+  #roles article:nth-of-type(2){
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  #roles article h2{
+    font-size: 32px;
+    margin-top: 48px;
+  }
+  #roles li{
+    font-size: 22px;
+  }
+  .borders{
+    border-left: 2px solid #757575;
+    border-right: 2px solid #757575;
+  }
+  /* Challenge */
+  #challenge{
+    background-image: url("../images/challenge_background.jpg");
+  }
+  #challenge h4{
+    width: 66.01%;
+  }
+  /* Solution */
+  #solution{
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 500px;
+  }
+  #solution .desktop{
+    display: flex;
+  }
+  #solution .desktop div{
+    width: 50%;
+  }
+  #solution h2{
+    margin: 0 0 24px 0;
+  }
+  /* User Research */
+  #userResearch .desktop{
+    display: flex;
+  }
+  #userResearch div{
+    padding-bottom:56px;
+    width: 50%;
+  }
+  #userResearch .desktop img + p{
+    margin-top: 16px;
+  }
+  /* Statistics */
+  #stats{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #stats article{
+    width: 50%;
+  }
+  #stats article div{
+    margin: 0 auto;
+    width: 80%;
+  }
+  #stats h4{
+    margin-bottom: 24px;
+  }
+  #stats article:nth-of-type(2) h4{
+    margin-top: 0;
+  }
+  #stats p:nth-of-type(even){
+    font-size: 30px;
+  }
+  #stats article:nth-of-type(2) p:nth-of-type(odd){
+    padding-top: 24px;
+  }
+  /* Competitive Analysis */
+  #competitive .desktop{
+    display: flex;
+  }
+  #competitive .desktop div{
+    width: 50%;
+  }
+  #competitive h2{
+    margin-bottom: 24px;
+  }
+  /* User Personas */
+  #personas article{
+    display: flex;
+  }
+  #personas article > div{
+    width: 33%;
+  }
+  #personas h4, #personas h3, #personas h2{
+    text-align: center;
+  }
+  /* User Stories */
+  #stories h2, #stories h4{
+    text-align: center;
+  }
+  td.caption{
+    width: auto;
+  }
+  /* User Flows */
+  #flows h2, #flows h4{
+    text-align: center;
+  }
+  #flows .caption{
+    text-align: left;
+  }
+  /* Wireframes */
+  #wireframes h2, #wireframes h4{
+    text-align: center;
+  }
+  /* Branding */
+  #branding{
+    background-image: url("../images/branding_background.jpg");
+    background-size: cover;
+  }
+  #branding h2{
+    width: 49.1%;
+  }
+  #branding h2, #branding h4{
+    text-align: center;
+  }
+  #branding h2 + p.body1{
+    margin-bottom: 32px;
+  }
+  /* Moodboard */
+  #mood .desktop{
+    display: flex;
+  }
+  #mood .desktop div{
+    padding: 0 5%;
+    width: 50%;
+  }
+  #mood h2{
+    margin: 0 0 24px 0;
+  }
+  #mood h4{
+    margin: 0 0 16px 0;
+  }
+  /* Logo */
+  #logo img{
+    width: 100%;
+  }
+  #logo .desktop{
+    display: flex;
+  }
+  #logo .desktop div{
+    width: 50%;
+  }
+  #logo .desktop div:nth-of-type(1){
+    padding: 0 5%;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  #logo h2{
+    margin: 0 0 24px 0;
+  }
+  #logo h4{
+    margin: 0 0 16px 0;
+  }
+  /* Color Palette */
+  #color h4{
+    text-align: center;
+  }
+  #color h2{
+    text-align: center;
+  }
+  #color article{
+    display: flex;
+  }
+  #color article div{
+    width: 33%;
+  }
+  /* Typography */
+  #type{
+    display: flex;
+  }
+  #type article{
+    width: 50%;
+  }
+  #type article:nth-of-type(2){
+    align-self: center;
+  }
+  #type h2{
+    text-align: left;
+    width: 66.1%;
+  }
+  #type h4{
+    text-align: left;
+    width: 66.1%;
+  }
+  #type img{
+    width: 58.53%;
+  }
+  /* Iterations to Deliverables */
+  #deliver{
+    background-image: url("../images/visual_design_background.png");
+  }
+  /* Sales Landing Page */
+  #landing h2, #landing h4{
+    text-align: center;
+  }
+  #landing div{
+    display: flex;
+  }
+  #landing div article{
+    width: 33%;
+  }
+  #landing div article div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  #landing div img{
+    height: 40px;
+  }
+  #landing div h2{
+    margin: 0 0 24px 8px;
+    width: auto;
+  }
+  /* Dashboard */
+  #dash h2, #dash h4{
+    text-align: center;
+  }
+  #dash div{
+    display: flex;
+  }
+  #dash div article{
+    width: 33%;
+  }
+  #dash div article div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  #dash div img{
+    height: 40px;
+  }
+  #dash div h2{
+    margin: 0 0 24px 8px;
+    width: auto;
+  }
+  /* Modifying Modal Screens*/
+  #modal h2, #modal h4{
+    text-align: center;
+  }
+  #modal div{
+    display: flex;
+  }
+  #modal div article{
+    width: 33%;
+  }
+  #modal div article div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  #modal div img{
+    height: 40px;
+  }
+  #modal div h2{
+    margin: 0 0 24px 8px;
+    width: auto;
+  }
+  /* Conclusion */
+  #conclusion h2, #conclusion h4{
+    text-align: center;
+  }
+  #conclusion div{
+    display: flex;
+  }
+  #conclusion article{
+    padding: 0 7%;
+    width: 50%;
+  }
+}
+/* Desktop Specific */
+@media screen and (min-width: 1000px){
+  /* Univeral Setting */
+  section.mobile{
+    display: none;
+  }
+  #mainnav a{
+    width: 9.76%;
+  }
+  /* Home Page */
+  /* Opening Image */
+  #hello{
+    height: 650px;
+  }
+  #hello h1{
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  #hello h4.desktop{
+    display: block;
+    position: relative;
+    top: 32%;
+    transform: translateY(-32%);
+  }
+  /* Lets Get Personal */
+  #personal{
+    padding: 0;
+  }
+  #personal img{
+    margin-left: 12.22%;
+    width: 64.16%;
+  }
+  #personal .desktop{
+    max-height: none;
+  }
+  /* Cloud Collab Description */
+  #cc img[alt="Cloud Collab logo"]{
+    padding-top: 70px;
+  }
+  /* About Page Opening Screen */
+  #intro{
+    min-height: 378px;
+  }
+  #intro h1{
+    transform: translateY(20%);
+  }
+  #intro h4{
+    transform: translateY(80%);
+  }
+  /* Moodboard */
+  #mood img{
+    margin: 0 auto;
+    width: 400px;
+  }
+}
