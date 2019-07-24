@@ -1,3 +1,16 @@
+/* Fonts */
+@font-face{
+	font-family: 'amostelysignature';
+	src: url('../amostely_signature/amostelysignature-webfont.woff') format('woff'),
+	     url('../amostely_signature/amostelysignature.ttf') format('truetype'),
+	     url('../amostely_signature/amostelysignature-webfont.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'sfnewrepublic';
+	src: url('../sf_new_republic/sf_new_republic-webfont.woff2') format('woff2'),
+	     url('../sf_new_republic/sf_new_republic-webfont.woff') format('woff'),
+	     url('../sf_new_republic/sf_new_republic.ttf') format('truetype');
+}
 /* Universal Settings */
 body{
   background-color: #FFFFFF;
@@ -46,7 +59,7 @@ h4{
   font-family: open-sans;
   font-size: 20px;
   line-height: 159%;
-  margin: 0 auto 16px auto;
+  margin: 0 auto;
   text-align: center;
   width: 79.71%;
 }
@@ -69,20 +82,20 @@ img {
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #282828;
-  cursor: default;
   display: block;
   font-family: minerva-modern;
   font-size: 20px;
+  font-weight: bold;
   height: 26px;
   line-height: 138%;
   margin: 0 auto;
   padding: 7px 0;
+  transition: 0.5s color, 0.5s background-color;
   text-align: center;
   text-decoration: none;
   width: 228px;
 }
 .button:hover{
-  font-weight: bold;
   background-color: #282828;
   color: #FFFFFF;
 }
@@ -119,8 +132,12 @@ img {
 .desktop{
   display:none;
 }
-.inline:hover{
+.inline{
   font-weight: bold;
+  text-decoration: none;
+}
+.inline:hover{
+  text-decoration: underline;
 }
 /* Navbar */
 #mainnav {
@@ -175,19 +192,19 @@ img {
   float: none;
   text-align: left;
 }
-.dropdown{
-  display: none;
-}
 /* Footer */
 #footer{
   background-color: #757575;
   padding: 0;
 }
-#footer > img{
-  display: block;
-  margin: 0 auto 24px auto;
-  padding-top: 40px;
-  width: 295px;
+#footer h6{
+	color: #FFFFFF;
+	font-family: 'amostelysignature';
+	font-size: 42px;
+	line-height: 138%;
+	margin: 0 auto 24px auto;
+	padding-top: 40px;
+	text-align: center;
 }
 #footer p{
   color: #FFFFFF;
@@ -236,13 +253,21 @@ img {
 /* Cloud Collab Description */
 #cc{
   background-color: #757575;
+	display; flex;
+	align-items: center;
 }
-#cc img:nth-of-type(1){
+#cc h6{
+	color: #FFFFFF;
   display: block;
+	font-family: 'sfnewrepublic';
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 138%;
   margin: 0 auto;
-  width: 79.1%;
+	text-align: center;
+	width: 79.1%;
 }
-#cc img:nth-of-type(2){
+#cc img{
   display: block;
   margin: 0 auto;
   width: 84.54%
@@ -318,36 +343,48 @@ img {
 }
 /* Projects Page */
 /* Opening Image */
-img[alt="Hero Image"]{
-  max-height: 174px;
-}
 /* Cloud Collab Introduction */
-#cloudCollab img{
-  display: block;
-  margin: 0 auto;
-  width: 17%;
+#hero{
+	position: relative;
+	padding: 0;
 }
-#cloudCollab img[alt="Cloud Collab script"]{
-  width: 52.9%;
+#hero img:nth-of-type(1){
+	display: block;
+	max-height: 174px;
+	position: relative;
 }
-#cloudCollab nav{
-  border-bottom: 4px solid #C6EEE2;
-  height: 41.85px;
-  margin: 56px auto 0px auto;
-  text-align: center;
-  width: 95.41%;
+#hero img:nth-of-type(2){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
 }
-#cloudCollab nav a{
+#subnav{
+	align-items: center;
+	background-color: #C6EEE2;
+	display: flex;
+	height: 48px;
+	justify-content: space-around;
+	margin: 0;
+	width: 100%;
+}
+#subnav a{
   color: #282828;
   font-family: open-sans;
   font-size: 12px;
-  line-height: 19px;
+  line-height: 158%;
   margin: 0px 1.18%;
   text-align: center;
   text-decoration: none;
 }
-#cloudCollab nav a:hover {
+#subnav a:hover {
   text-decoration: underline;
+}
+#cloudCollab img[alt="Cloud Collab script"]{
+	display: block;
+	margin: 0 auto;
+  width: 52.9%;
 }
 #cloudCollab h4{
   font-size: 16px;
@@ -432,6 +469,9 @@ img[alt="Hero Image"]{
   display: block;
   margin: 0 auto 24px auto;
   width: 79.71%;
+}
+#userResearch a{
+  color: #282828;
 }
 #userResearch ul{
   display: block;
@@ -518,9 +558,6 @@ img[alt="Hero Image"]{
 #personas{
   background-color: #F7F7F7;
 }
-#personas h4{
-  margin-bottom: 24px;
-}
 #personas img{
   display: block;
   margin: 60px auto 0 auto;
@@ -543,7 +580,6 @@ img[alt="Hero Image"]{
 table{
   border-collapse: collapse;
   margin: 32px auto 0 auto;
-  width: 79.71%;
 }
 th{
   color: #282828;
@@ -557,9 +593,11 @@ th{
 table, th, td {
   border: 1px solid black;
   padding: 8px;
+  vertical-align: middle;
 }
 table .caption{
   display: table-cell;
+  width: auto;
 }
 /* User Flows */
 #flows{
@@ -573,10 +611,17 @@ table .caption{
 }
 #flows .caption{
   color: #FFFFFF;
+	margin-top: 40px;
+	text-align: center;
 }
 #flows img{
   display: block;
   margin: 0 auto;
+}
+#flows div:nth-of-type(2){
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 /* Wireframes */
 #wireframes{
@@ -585,9 +630,6 @@ table .caption{
 }
 #wireframes a{
   color: #282828;
-}
-#wireframes h4{
-  margin-bottom: 16px;
 }
 #wireframes img{
   display: block;
@@ -864,10 +906,6 @@ table .caption{
     justify-content: center;
   }
   /* Navbar */
-  #mainnav{
-    height: auto;
-    position: fixed;
-  }
   #mainnav a{
     text-align: center;
     width: 11%;
@@ -877,56 +915,6 @@ table .caption{
   }
   #mainnav a.icon {
     display: none;
-  }
-  /* The dropdown container */
-  .dropdown {
-    display: block;
-    float: right;
-    height: 30px;
-    line-height: 219%;
-    overflow: hidden;
-    text-align: center;
-    width: 9.76%;
-  }
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    background-color: inherit;
-    border: none;
-    color: #FFFFFF;
-    font-family: open-sans; /* Important for vertical align on mobile phones */
-    font-size: 16px;
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    background-color: #757575;
-    display: none;
-    font-family: open-sans;
-    min-width: 160px;
-    position: absolute;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-    z-index: 1;
-  }
-  /* Links inside the dropdown */
-  #mainnav .dropdown-content a {
-    color: #FFFFFF;
-    display: block;
-    float: none;
-    padding: 12px 16px;
-    text-align: center;
-    text-decoration: none;
-    width: auto;
-  }
-
-  /* Add a grey background color to dropdown links on hover */
-  #mainnav .dropdown-content a:hover {
-    background-color: #C6EEE2;
-    color: #282828;
-  }
-
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
   }
   .home{
     margin-left: 0;
@@ -974,9 +962,9 @@ table .caption{
   #cc article:nth-of-type(3){
     display: flex;
   }
-  #cc img[alt="Cloud Collab logo"]{
-    margin: 0 16.17% 24px 16.17%;
-    width: 39.44%;
+  #cc h6{
+		text-align: left;
+    width: 67.65%;
   }
   #cc .body1{
     color: #FFFFFF;
@@ -1029,7 +1017,6 @@ table .caption{
   /* About Opening Image */
   #intro{
     height: auto;
-    margin-top: 48px;
     width: 100%;
   }
   #intro h1{
@@ -1064,16 +1051,27 @@ table .caption{
   }
   /* Projects Page */
   /* Work Opening Image */
-  img[alt="Hero Image"] {
+  #hero img:nth-of-type(1) {
     max-height: none;
   }
+	#hero img:nth-of-type(2){
+		width: 50%;
+	}
   /* Cloud Collab Summary */
-  #cloudCollab img[alt="Cloud Collab script"]{
-    width: 35%;
+	#subnav{
+		background-color: #C6EEE2;
+		height: 48px;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		z-index: 1;
   }
-  #cloudCollab nav{
-    margin-top: 48px;
-    width: 65.94%;
+	#subnav a{
+		font-size: 16px;
+		margin: 0 2%;
+	}
+	#cloudCollab img[alt="Cloud Collab script"]{
+    width: 35%;
   }
   #cloudCollab h4{
     font-size: 20px;
@@ -1116,6 +1114,7 @@ table .caption{
   /* Challenge */
   #challenge{
     background-image: url("../images/challenge_background.jpg");
+    padding: 116px 0;
   }
   #challenge h4{
     width: 66.01%;
@@ -1201,9 +1200,6 @@ table .caption{
   #flows h2, #flows h4{
     text-align: center;
   }
-  #flows .caption{
-    text-align: left;
-  }
   /* Wireframes */
   #wireframes h2, #wireframes h4{
     text-align: center;
@@ -1234,11 +1230,11 @@ table .caption{
     margin: 0 0 24px 0;
   }
   #mood h4{
-    margin: 0 0 16px 0;
+    margin: 0;
   }
   /* Logo */
   #logo img{
-    width: 100%;
+    width: 75%;
   }
   #logo .desktop{
     display: flex;
@@ -1255,7 +1251,7 @@ table .caption{
     margin: 0 0 24px 0;
   }
   #logo h4{
-    margin: 0 0 16px 0;
+    margin: 0;
   }
   /* Color Palette */
   #color h4{
