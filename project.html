@@ -7,34 +7,29 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://use.typekit.net/dej0kfj.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="stylesheet" href="assets/amostely_signature/stylesheet.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body style = "margin:0">
 	<nav id="mainnav">
-  	<a href="index.html" target="_blank">MEGAN HARRINGTON</a>
-		<a href="#contact" target="_blank">CONTACT</a>
-  	<a href="about.html" target="_blank">ABOUT</a>
-	  <!-- <a href="project.html" target="_blank">PROJECT</a> -->
-		<div class="dropdown">
-			<button class="dropbtn">PROJECT &#9660;</button>
-			<div class="dropdown-content">
-				<a href="#cloudCollab">OVERVIEW</a>
-				<a href="#challenge">UX PROCESS</a>
-				<a href="#branding">BRANDING</a>
-				<a href="#deliver">VISUAL DESIGN</a>
-			</div>
-		</div>
+  	<a href="index.html">MEGAN HARRINGTON</a>
+		<a href="#contact">CONTACT</a>
+  	<a href="about.html">ABOUT</a>
+	  <a href="project.html">PROJECT</a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</nav>
-	<img src="assets/images/hero_image.png" alt="Hero Image">
+	<section id="hero">
+		<img src="assets/images/cloud_background.jpg" alt="Hero Image">
+		<img src="assets/images/homescreen_mockup.png" alt="Hero Computer">
+	</section>
+	<nav id="subnav">
+		<a href="#cloudCollab">OVERVIEW</a>
+		<a href="#challenge">UX PROCESS</a>
+		<a href="#branding">BRANDING</a>
+		<a href="#deliver">VISUAL DESIGN</a>
+	</nav>
 	<section id="cloudCollab">
 		<img src="assets/images/cloud_collab_logo.png" alt="Cloud Collab script">
-		<nav>
-			<a href="#cloudCollab">OVERVIEW</a>
-			<a href="#challenge">UX PROCESS</a>
-			<a href="#branding">BRANDING</a>
-			<a href="#deliver">VISUAL DESIGN</a>
-		</nav>
 		<h4>Cloud Collab is a cloud storage, and online collaboration platform with a
 			 strong social media feel that inspires individuals and teams to get their head in
 			 the clouds. From idea and note saving to document creation Cloud Collab
@@ -385,12 +380,12 @@
 			illustrate how the user would interact with the platform to accomplish those goals. Two
 			user flows  examples are shown below: </p>
 		<div>
-			<img src="assets/images/create_document.png" alt="Create Document">
 			<p class="caption">Creating a New Document User Flow</p>
+			<img src="assets/images/create_document.png" alt="Create Document">
 		</div>
 		<div>
-			<img src="assets/images/message_friends.png" alt="Message Friends">
 			<p class="caption">Messassing Friend(s) User Flow</p>
+			<img src="assets/images/message_friends.png" alt="Message Friends">
 		</div>
 	</section>
 	<section id="wireframes">
@@ -746,7 +741,7 @@
 		</div>
 	</section>
 	<section id="footer">
-		<img src="assets/images/lets_work_together.png" alt="Lets work together! script">
+    <h6>Let's Work Together!</h6>
 		<p class="body1">Thanks for stopping by! I hope you enjoyed your time here.
 			Interested in working together or have questions? Reach out!
 			I would love to hear from you.</p>
@@ -758,9 +753,6 @@
 		<p class="caption">2019 Megan Harrington | Designed By Megan Harrington</p>
 	</section>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
 	<script type="text/javascript" src="assets/js/lib/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
