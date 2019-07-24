@@ -3,6 +3,7 @@ function myFunction() {
   var element = document.getElementById("mainnav");
   element.classList.toggle("responsive");
 }
+
 function alterSize(){
   if($(window).width() > 600) {
       $('.body2').addClass('body1');
@@ -14,3 +15,5 @@ function alterSize(){
 }
 $(window).on('resize', alterSize);
 alterSize();
+
+AOS.init();
