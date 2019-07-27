@@ -15,5 +15,3 @@ function alterSize(){
 }
 $(window).on('resize', alterSize);
 alterSize();
-
-AOS.init();
