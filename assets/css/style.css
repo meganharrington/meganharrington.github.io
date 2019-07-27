@@ -230,71 +230,53 @@ img {
 }
 /* Home Page */
 /* Opening Screen */
-#hello{
-  background-image: url("../images/homepage_image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  height: 207px;
-  max-height: 207px;
-  min-height: auto;
+#hello img{
+	width: 50%;
+	display: block;
+	margin: 0 auto 24px auto;
 }
 #hello h1{
   color: #282828;
-  padding: 6vh 0 16px 50%;
-  text-align: left;
-  width: 170px;
+	font-weight: bold;
+	margin-bottom: 16px;
+  text-align: center;
 }
-#hello h4{
-  font-size: 16px;
-  padding-left: 50%;
-  width: 46.92%;
+#hello .body2{
+	text-align: center;
 }
 /* Cloud Collab Description */
 #cc{
-  background-color: #757575;
-	display; flex;
+  background-color: #F7F7F7;
+	display: flex;
 	align-items: center;
 }
-#cc h6{
-	color: #FFFFFF;
-  display: block;
-	font-family: 'sfnewrepublic';
-	font-size: 45px;
-	font-weight: bold;
-	line-height: 138%;
+#cc h2{
+	color: #282828;
   margin: 0 auto;
 	text-align: center;
 	width: 79.1%;
 }
 #cc img{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   width: 84.54%
 }
 #cc .body2{
-  color: #FFFFFF;
+  color: #282828;
+	text-align: center;
 }
 #cc .button{
   display: block;
   margin: 24px auto 0 auto;
 }
 /* Lets Get Personal */
-#personal .mobile{
-  display: flex;
-  flex-wrap: wrap;
-}
-#personal .mobile div{
-  width: 50%;
-}
 #personal img{
-  height: 100%;
   margin-left: 32px;
   max-width: 84%;
 }
 #personal h2{
   font-size: 22px;
-  margin-top: 50%;
+  margin-top: 16px;
   width: 89.29%;
 }
 #personal .button{
@@ -304,7 +286,7 @@ img {
 #personal .body2{
   margin: 22px auto;
   text-align: center;
-  width: 95.65%;
+  width: 90%;
 }
 /* About Page */
 /* Opening Screen */
@@ -367,7 +349,10 @@ img {
 	height: 48px;
 	justify-content: space-around;
 	margin: 0;
+	position: sticky;
+	top: 0;
 	width: 100%;
+	z-index: 1;
 }
 #subnav a{
   color: #282828;
@@ -560,7 +545,7 @@ img {
 }
 #personas img{
   display: block;
-  margin: 60px auto 0 auto;
+  margin: 52px auto 0 auto;
   width: 150px;
 }
 #personas article h2{
@@ -614,14 +599,13 @@ table .caption{
 	margin-top: 40px;
 	text-align: center;
 }
-#flows img{
-  display: block;
-  margin: 0 auto;
-}
-#flows div:nth-of-type(2){
+#flows div{
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+}
+#flows div:nth-of-type(1){
+	margin-bottom: 80px;
 }
 /* Wireframes */
 #wireframes{
@@ -750,10 +734,7 @@ table .caption{
 }
 /* Dashboard */
 #dash{
-  background-color: #757575;
-}
-#dash h4, #dash h2, #dash .body2{
-  color: #FFFFFF;
+  background-color: #F7F7F7;
 }
 #dash > img{
   display: block;
@@ -807,6 +788,11 @@ table .caption{
 }
 /* Tablet Specific */
 /* Body1 Styles */
+#cc .body1{
+	color: #282828;
+	margin: 0 auto;
+	width: 75%
+}
 #personal .body1{
   width: 89.11%;
 }
@@ -859,7 +845,6 @@ table .caption{
   width: 72.1%;
 }
 #dash .body1{
-  color: #FFFFFF;
   text-align: center;
   margin: 0 auto;
   width: 72.1%;
@@ -929,24 +914,21 @@ table .caption{
   }
   /* Home Page */
   /* Opening Image */
-  #hello{
-    height: 400px;
-    max-height: none;
-  }
-  #hello h1{
-    padding: 4% 0 16px 50%;
-    position: relative;
-    top: 55%;
-    transform: translateY(-55%);
-    width: auto;
-  }
-  #hello h4.desktop{
-    display: none;
-  }
   #hello .desktop{
-    display: block;
-    margin: 0;
+		display: flex;
   }
+	#hello div{
+		width: 50%;
+	}
+  #hello h1{
+		text-align: left;
+		width: auto;
+		margin: 0 0 8px 0;
+  }
+	#hello h4{
+		text-align: left;
+		margin: 0;
+	}
   section.mobile{
     display: block;
     padding: 40px;
@@ -962,24 +944,20 @@ table .caption{
   #cc article:nth-of-type(3){
     display: flex;
   }
-  #cc h6{
+  #cc h2{
+		margin-bottom: 16px;
 		text-align: left;
-    width: 67.65%;
-  }
-  #cc .body1{
-    color: #FFFFFF;
-    margin: 0 auto;
-    width: 67.65%
+    width: 75%;
   }
   #cc .caption{
-    color: #FFFFFF;
+    color: #282828;
     display: block;
     margin: 14px auto 32px auto;
     text-align: left;
-    width: 67.65%
+    width: 75%
   }
   #cc .button{
-    margin: 0 16.17%;
+    margin: 0 12.5%;
   }
   #cc img[alt="Cloud Collab Mockup"]{
     align-self: center;
@@ -1007,7 +985,7 @@ table .caption{
   }
   #personal h2{
     font-size: 32px;
-    margin: 0 0 32px 0;
+    margin: 0 0 16px 0;
     text-align: left;
   }
   #personal .button{
@@ -1059,12 +1037,8 @@ table .caption{
 	}
   /* Cloud Collab Summary */
 	#subnav{
-		background-color: #C6EEE2;
 		height: 48px;
 		justify-content: center;
-		position: sticky;
-		top: 0;
-		z-index: 1;
   }
 	#subnav a{
 		font-size: 16px;
@@ -1189,6 +1163,9 @@ table .caption{
   #personas h4, #personas h3, #personas h2{
     text-align: center;
   }
+	#personas h2{
+		margin-bottom: 0;
+	}
   /* User Stories */
   #stories h2, #stories h4{
     text-align: center;
@@ -1380,23 +1357,7 @@ table .caption{
   }
   /* Home Page */
   /* Opening Image */
-  #hello{
-    height: 650px;
-  }
-  #hello h1{
-    top: 40%;
-    transform: translateY(-40%);
-  }
-  #hello h4.desktop{
-    display: block;
-    position: relative;
-    top: 32%;
-    transform: translateY(-32%);
-  }
   /* Lets Get Personal */
-  #personal{
-    padding: 0;
-  }
   #personal img{
     margin-left: 12.22%;
     width: 64.16%;
