@@ -18,6 +18,7 @@ body{
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+	font-size: 0;
 }
 section{
   padding: 48px 0;
@@ -139,6 +140,13 @@ img {
 .inline:hover{
   text-decoration: underline;
 }
+.parallaxChild{
+	padding: 40px 0;
+	background-size: cover;
+}
+#challenge, #branding, #deliver{
+	padding: 0;
+}
 /* Navbar */
 #mainnav {
   background-color: #757575;
@@ -230,6 +238,9 @@ img {
 }
 /* Home Page */
 /* Opening Screen */
+img[src="assets/images/homepage_image.jpg"]{
+	vertical-align: bottom;
+}
 #hello img{
 	width: 50%;
 	display: block;
@@ -410,9 +421,8 @@ img {
   text-align: center;
 }
 /* The Challenge */
-#challenge{
+#challenge .parallaxChild{
   background-image: url("../images/challenge_background_mobile.jpg");
-  background-size: cover;
 }
 #challenge h1{
   color: #FFFFFF;
@@ -628,9 +638,8 @@ table .caption{
   text-align: center;
 }
 /* Branding */
-#branding{
+#branding .parallaxChild{
   background-image: url("../images/branding_background_mobile.jpg");
-  background-size: cover;
 }
 #branding h1{
   color: #FFFFFF;
@@ -699,9 +708,8 @@ table .caption{
   margin-top: 80px;
 }
 /* Iterations to Deliverables */
-#deliver{
+#deliver .parallaxChild{
   background-image: url("../images/visual_design_background_mobile.png");
-  background-size: cover;
 }
 #deliver h1{
   color: #FFFFFF;
@@ -890,6 +898,13 @@ table .caption{
     flex-flow: column wrap;
     justify-content: center;
   }
+	.parallaxChild {
+		background-attachment: fixed;
+		height: 100vh;
+	}
+	#challenge, #branding, #deliver{
+		padding: 0;
+	}
   /* Navbar */
   #mainnav a{
     text-align: center;
@@ -1086,18 +1101,19 @@ table .caption{
     border-right: 2px solid #757575;
   }
   /* Challenge */
-  #challenge{
+  #challenge .parallaxChild{
     background-image: url("../images/challenge_background.jpg");
-    padding: 116px 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
   }
-  #challenge h4{
+	#challenge h4{
     width: 66.01%;
-  }
+	}
   /* Solution */
   #solution{
     display: flex;
     flex-flow: column wrap;
-    max-height: 500px;
   }
   #solution .desktop{
     display: flex;
@@ -1182,17 +1198,18 @@ table .caption{
     text-align: center;
   }
   /* Branding */
-  #branding{
+  #branding .parallaxChild{
     background-image: url("../images/branding_background.jpg");
     background-size: cover;
+		display: flex;
+	  flex-flow: column nowrap;
+		justify-content: center;
   }
-  #branding h2{
-    width: 49.1%;
-  }
-  #branding h2, #branding h4{
+  #branding h1, #branding .body1{
     text-align: center;
+    width: 66.01%;
   }
-  #branding h2 + p.body1{
+  #branding h1 + p.body1{
     margin-bottom: 32px;
   }
   /* Moodboard */
@@ -1265,8 +1282,11 @@ table .caption{
     width: 58.53%;
   }
   /* Iterations to Deliverables */
-  #deliver{
+  #deliver .parallaxChild{
     background-image: url("../images/visual_design_background.png");
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
   }
   /* Sales Landing Page */
   #landing h2, #landing h4{
