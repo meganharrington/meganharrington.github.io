@@ -238,7 +238,8 @@ img {
 }
 /* Home Page */
 /* Opening Screen */
-img[src="assets/images/homepage_image.jpg"]{
+img[src="assets/images/homepage_image.png"]{
+	display: block;
 	vertical-align: bottom;
 }
 #hello img{
@@ -355,6 +356,7 @@ img[src="assets/images/homepage_image.jpg"]{
 #subnav{
 	align-items: center;
 	background-color: #C6EEE2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	display: flex;
 	height: 48px;
 	justify-content: space-around;
@@ -461,6 +463,7 @@ img[src="assets/images/homepage_image.jpg"]{
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 24px;
+	margin-top: 16px;
   text-align: center;
 }
 #forms{
@@ -490,7 +493,8 @@ img[src="assets/images/homepage_image.jpg"]{
 }
 #stats h4{
   color: #FFFFFF;
-  margin-bottom: 16px;
+	margin: 0 24px 16px 24px;
+	text-align: left;
 }
 #stats div{
   display: flex;
@@ -512,7 +516,7 @@ img[src="assets/images/homepage_image.jpg"]{
   width: 73%;
 }
 #stats article:nth-of-type(2) h4{
-  margin: 32px auto 24px auto;
+  margin: 32px 24px 24px 24px;
 }
 #stats .first{
   margin-top: 0;
@@ -526,11 +530,11 @@ img[src="assets/images/homepage_image.jpg"]{
 }
 /* Competitive Analysis */
 #competitive h2{
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 #competitive img{
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 32px auto;
   width: 78.63%;
 }
 #competitive p{
@@ -725,7 +729,6 @@ table .caption{
 #landing > img{
   display: block;
   margin: 0 auto;
-  width: 84.54%;
 }
 #landing div article div{
   margin: 40px auto 20px auto;
@@ -750,7 +753,6 @@ table .caption{
 #dash > img{
   display: block;
   margin: 0 auto;
-  width: 84.54%;
 }
 #dash div article div{
   margin: 40px auto 20px auto;
@@ -772,7 +774,6 @@ table .caption{
 #modal > img{
   display: block;
   margin: 0 auto;
-  width: 84.54%;
 }
 #modal div article div{
   margin: 40px auto 20px auto;
@@ -903,7 +904,7 @@ table .caption{
   }
 	.parallaxChild {
 		background-attachment: fixed;
-		height: 100vh;
+		height: 75vh;
 	}
 	#challenge, #branding, #deliver{
 		padding: 0;
@@ -1135,8 +1136,8 @@ table .caption{
     padding-bottom:56px;
     width: 50%;
   }
-  #userResearch .desktop img + p{
-    margin-top: 16px;
+  #userResearch article.desktop div img + p{
+    margin-top: 24px;
   }
   /* Statistics */
   #stats{
@@ -1151,10 +1152,10 @@ table .caption{
     width: 80%;
   }
   #stats h4{
-    margin-bottom: 24px;
+		margin: 0 auto 24px auto;
   }
   #stats article:nth-of-type(2) h4{
-    margin-top: 0;
+    margin: 0 auto 32px auto;
   }
   #stats p:nth-of-type(even){
     font-size: 30px;
@@ -1168,9 +1169,6 @@ table .caption{
   }
   #competitive .desktop div{
     width: 50%;
-  }
-  #competitive h2{
-    margin-bottom: 24px;
   }
   /* User Personas */
   #personas article{
@@ -1295,6 +1293,9 @@ table .caption{
   #landing h2, #landing h4{
     text-align: center;
   }
+	#landing > img{
+		width: 84.54%;
+	}
   #landing div{
     display: flex;
   }
@@ -1317,6 +1318,9 @@ table .caption{
   #dash h2, #dash h4{
     text-align: center;
   }
+	#dash > img{
+		width: 84.54%;
+	}
   #dash div{
     display: flex;
   }
@@ -1339,6 +1343,9 @@ table .caption{
   #modal h2, #modal h4{
     text-align: center;
   }
+	#modal > img{
+		width: 84.54%;
+	}
   #modal div{
     display: flex;
   }
