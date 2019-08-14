@@ -141,11 +141,63 @@ img {
   text-decoration: underline;
 }
 .parallaxChild{
-	padding: 40px 0;
+	background-attachment: fixed;
 	background-size: cover;
+	padding: 80px 0;
 }
 #challenge, #branding, #deliver{
 	padding: 0;
+}
+/* Animations */
+#about .animateLeft{
+	animation-duration: 1.25s;
+	animation-name: slideinleft;
+	color: #282828;
+}
+@keyframes slideinleft{
+	from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#about .animateRight{
+	animation-duration: 1.25s;
+	animation-name: slideinright;
+	color: #282828;
+}
+@keyframes slideinright{
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.animateSize{
+	animation-duration: 1s;
+	animation-name: size;
+}
+@keyframes size{
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+img[src="assets/images/whitemh.png"]{
+	animation-duration: 3s;
+	animation-name:slidefromtop;
+}
+@keyframes slidefromtop{
+	from {
+		transform: translateY(-500%);
+	}
+	to {
+		transform: translateY(0%);
+	}
 }
 /* Navbar */
 #mainnav {
@@ -238,9 +290,20 @@ img {
 }
 /* Home Page */
 /* Opening Screen */
-img[src="assets/images/homepage_image.png"]{
-	display: block;
-	vertical-align: bottom;
+#homehero{
+	padding: 0;
+	position: relative;
+}
+#homehero img:nth-of-type(1){
+	position: relative;
+	z-index: -2;
+}
+#homehero img:nth-of-type(2){
+	bottom: 15%;
+	position: absolute;
+	right: 5%;
+	width: 20%;
+	z-index: -1;
 }
 #hello img{
 	width: 50%;
@@ -329,14 +392,16 @@ img[src="assets/images/homepage_image.png"]{
 #about .aboutText{
 	border-left: 5px solid #757575;
 	margin-left: 5px;
+	overflow: hidden;
 	width: 68%;
 }
 #about img{
 	margin-left: 10px;
-	margin-top: -31px;
+	margin-top: -27.5%;
 }
 #about p{
-	margin: -10px auto 96px auto;
+	color: #FFFFFF;
+	margin: 0 auto 96px auto;
 }
 #about article:last-of-type p{
 	margin-bottom: 0;
@@ -435,6 +500,7 @@ img[src="assets/images/homepage_image.png"]{
 /* The Challenge */
 #challenge .parallaxChild{
   background-image: url("../images/challenge_background_mobile.jpg");
+	background-position: center;
 }
 #challenge h1{
   color: #FFFFFF;
@@ -570,7 +636,11 @@ img[src="assets/images/homepage_image.png"]{
 #personas img{
   display: block;
   margin: 52px auto 0 auto;
+	transform: scale(0);
   width: 150px;
+}
+#personas img.animateSize{
+	transform: scale(1);
 }
 #personas article h2{
   margin-top: 16px;
@@ -654,6 +724,7 @@ table .caption{
 /* Branding */
 #branding .parallaxChild{
   background-image: url("../images/branding_background_mobile.jpg");
+	background-position: center;
 }
 #branding h1{
   color: #FFFFFF;
@@ -697,7 +768,11 @@ table .caption{
 #color img{
   display: block;
   margin: 48px auto 40px auto;
+	transform: scale(0);
   width: 61.11%;
+}
+#color img.animateSize{
+	transform: scale(1);
 }
 #color p{
   margin: 0 auto;
@@ -724,6 +799,7 @@ table .caption{
 /* Iterations to Deliverables */
 #deliver .parallaxChild{
   background-image: url("../images/visual_design_background_mobile.png");
+	background-position: center;
 }
 #deliver h1{
   color: #FFFFFF;
@@ -909,9 +985,9 @@ table .caption{
     flex-flow: column wrap;
     justify-content: center;
   }
-	.parallaxChild {
-		background-attachment: fixed;
+	.parallaxChild{
 		height: 75vh;
+		padding: 40px 0;
 	}
 	#challenge, #branding, #deliver{
 		padding: 0;
@@ -940,6 +1016,9 @@ table .caption{
   }
   /* Home Page */
   /* Opening Image */
+	#homehero img:nth-of-type(2){
+		width: 15%;
+	}
   #hello .desktop{
 		display: flex;
   }
