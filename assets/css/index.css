@@ -1,0 +1,180 @@
+img[src="assets/images/index/whitemh.png"]{
+	animation-duration: 3s;
+	animation-name:slidefromtop;
+}
+/* Home Page */
+/* Opening Screen */
+.hero{
+	padding: 0;
+	position: relative;
+}
+.hero img:nth-of-type(1){
+	position: relative;
+	z-index: -2;
+}
+.hero img:nth-of-type(2){
+	bottom: 15%;
+	position: absolute;
+	right: 5%;
+	width: 20%;
+	z-index: -1;
+}
+.hello img{
+	width: 50%;
+	display: block;
+	margin: 0 auto 24px auto;
+}
+.hello h1{
+  color: #282828;
+	margin-bottom: 16px;
+  text-align: center;
+}
+.hello .body2{
+	text-align: center;
+}
+/* Cloud Collab Description */
+.work{
+    background-color: #F7F7F7;
+	display: flex;
+	align-items: center;
+}
+.work h2{
+	color: #282828;
+    margin: 0 auto;
+	text-align: center;
+	width: 79.1%;
+}
+.work img{
+    display: block;
+    margin: 0 auto 16px auto;
+    width: 84.54%
+}
+.work .body1{
+	color: #282828;
+	margin: 0 auto;
+	width: 75%
+}
+.work .body2{
+    color: #282828;
+	text-align: center;
+}
+.work .button{
+    display: block;
+    margin: 24px auto 0 auto;
+}
+/* Lets Get Personal */
+.personal img{
+    margin-left: 32px;
+    max-width: 84%;
+}
+.personal h2{
+    font-size: 22px;
+    margin-top: 16px;
+    width: 89.29%;
+}
+.personal .button{
+    display: block;
+    margin: 24px auto 16px auto;
+}
+.personal .body1{
+    width: 89.11%;
+}
+.personal .body2{
+    margin: 22px auto;
+    text-align: center;
+    width: 90%;
+}
+@media screen and (min-width: 600px){
+    /* Home Page */
+    /* Opening Image */
+    .hero img:nth-of-type(2){
+        width: 15%;
+    }
+    .hello .desktop{
+        display: flex;
+    }
+    .hello div{
+        width: 50%;
+    }
+    .hello h1{
+        text-align: left;
+        width: auto;
+        margin: 0 0 8px 0;
+    }
+    .hello h4{
+        text-align: left;
+        margin: 0;
+    }
+    /* Cloud Collab Description */
+    .work{
+        display: flex;
+        padding: 56px 0;
+    }
+    .work article{
+        width: 50%;
+    }
+    .work article:nth-of-type(3){
+        display: flex;
+    }
+    .work h2{
+        margin-bottom: 16px;
+        text-align: left;
+        width: 75%;
+    }
+    .work .caption{
+        color: #282828;
+        display: block;
+        margin: 14px auto 32px auto;
+        text-align: left;
+        width: 75%
+    }
+    .work .button{
+        margin: 0 12.5%;
+    }
+    .work img[alt="Cloud Collab Mockup"]{
+        align-self: center;
+        width: 96.67%;
+    }
+    /* Lets Get Personal */
+    .personal{
+        padding: 56px 0;
+    }
+    /* .personal .mobile{
+        display: none;
+    } */
+    .personal .desktop{
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 500px;
+        padding: 0;
+    }
+    .personal .desktop div{
+        width: 50%;
+    }
+    .personal img{
+        margin-left: 12.22%;
+        width: 72%;
+    }
+    .personal h2{
+        font-size: 32px;
+        margin: 0 0 16px 0;
+        text-align: left;
+    }
+    .personal .button{
+        margin: 40px 0;
+    }
+}
+@media screen and (min-width: 1000px){
+    /* Home Page */
+    .personal img{
+        margin-left: 12.22%;
+        width: 64.16%;
+    }
+    .personal .desktop{
+        max-height: none;
+    }
+    /* Cloud Collab Description */
+    .work img[alt="Cloud Collab logo"]{
+        padding-top: 70px;
+    }
+}

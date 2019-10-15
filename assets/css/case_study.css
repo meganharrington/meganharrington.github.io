@@ -1,0 +1,823 @@
+#challenge, #branding, #deliver{
+	padding: 0;
+}
+.animateSize{
+	animation-duration: 1s;
+	animation-name: size;
+}
+/* Projects Page */
+/* Opening Image */
+/* Case Study Introduction */
+.hero{
+	position: relative;
+	padding: 0;
+}
+.hero img:nth-of-type(1){
+	display: block;
+	max-height: 174px;
+	position: relative;
+}
+.hero img:nth-of-type(2){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+.subnav{
+	align-items: center;
+	background-color: #C6EEE2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	height: 48px;
+	justify-content: space-around;
+	margin: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.subnav a{
+  color: #282828;
+  font-family: open-sans;
+  font-size: 12px;
+  line-height: 158%;
+  margin: 0px 1.18%;
+  text-align: center;
+  text-decoration: none;
+}
+.subnav a:hover {
+  text-decoration: underline;
+}
+#name img[alt="Cloud Collab script"]{
+	display: block;
+	margin: 0 auto;
+  width: 52.9%;
+}
+#name h4{
+  font-size: 16px;
+  margin: 24px auto 40px auto;
+}
+#name .button{
+  margin-bottom: 24px;
+}
+.roles{
+  background-color: #F7F7F7;
+  display: block;
+}
+.roles article{
+  display: inline-block;
+  width: 100%;
+}
+.roles article:nth-of-type(2){
+  margin: 56px 0;
+}
+.roles img{
+  display: block;
+  margin: 0 auto;
+  max-width: 126px;
+}
+.roles article h2{
+  font-size: 28px;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  text-align: center;
+}
+.roles ul{
+  color: #282828;
+  font-family: open-sans;
+  font-size: 20px;
+  line-height: 35px;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+/* The Challenge */
+#challenge .parallaxChild{
+  background-image: url("../images/cloud_collab/challenge_background_mobile.jpg");
+	background-position: center;
+}
+#challenge h1{
+  color: #FFFFFF;
+}
+#challenge h4{
+  color: #FFFFFF;
+  text-align: left;
+}
+/* Solution */
+.solution h2{
+  margin-bottom: 0;
+}
+.solution img{
+  display: block;
+  margin: 0 auto;
+  width: 79.1%;
+}
+.solution .body1{
+  width: 80.83%;
+}
+.solution .body2{
+  margin-top: 16px;
+}
+/* User Research */
+.userResearch{
+  background-color: #F7F7F7;
+  padding-bottom: 0;
+}
+.userResearch article img{
+  display: block;
+  margin: 0 auto;
+  width: 60.39%;
+}
+.userResearch article img + p:nth-of-type(1){
+  font-family: open-sans;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 24px;
+	margin-top: 16px;
+  text-align: center;
+}
+.forms{
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 79.71%;
+}
+.userResearch a{
+  color: #282828;
+}
+.userResearch ul{
+  display: block;
+  list-style-type: initial;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 79.71%;
+}
+.userResearch li{
+  margin: 0 0 20px 24px;
+}
+.userResearch li:nth-of-type(3){
+  margin-bottom: 8px;
+}
+/* Statistics */
+.stats{
+  background-color: #757575;
+}
+.stats h4{
+  color: #FFFFFF;
+	margin: 0 24px 16px 24px;
+	text-align: left;
+}
+.stats div{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 24px;
+}
+.stats h2{
+  color: #C6EEE2;
+  display: inline;
+  margin-right: 16px;
+}
+.stats h3{
+  color: #FFFFFF;
+  display: inline;
+  text-align: left;
+}
+.stats article:nth-of-type(2) h4{
+  margin: 32px 24px 24px 24px;
+}
+.stats .first{
+  margin-top: 0;
+}
+.stats .button{
+  margin: 32px auto 0 auto;
+}
+.stats .button:hover{
+  background-color: #FFFFFF;
+  color: #282828;
+}
+/* Competitive Analysis */
+.competitive h2{
+  margin-bottom: 24px;
+}
+.competitive img{
+  display: block;
+  margin: 0 auto 32px auto;
+  width: 78.63%;
+}
+.competitive p{
+  color: #282828;
+  display: block;
+  margin: 0 auto 29px auto;
+  width: 79.71%;
+}
+.competitive ul{
+  display: block;
+  list-style-type: initial;
+  margin: 0 auto;
+  width: 79.71%;
+}
+.competitive li{
+  color: #282828;
+  margin: 0 0 29px 24px;
+}
+.competitive a{
+  color: #282828;
+}
+/* User Personas */
+.personas{
+  background-color: #F7F7F7;
+}
+.personas img{
+  display: block;
+  margin: 52px auto 0 auto;
+	transform: scale(0);
+  width: 150px;
+}
+.personas img.animateSize{
+	transform: scale(1);
+}
+.personas article h2{
+  margin-top: 16px;
+}
+.personas article h4{
+  margin-bottom: 0;
+}
+.personas h6:nth-of-type(2){
+  color: #282828;
+  margin-top: 30px;
+}
+.personas .button{
+  margin-top: 56px;
+}
+/* User Stories */
+table{
+  border-collapse: collapse;
+  margin: 32px auto 0 auto;
+}
+th{
+  color: #282828;
+  background-color: #C6EEE2;
+  font-family: minerva-modern;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+  vertical-align: middle;
+}
+table .caption{
+  display: table-cell;
+  width: auto;
+}
+.stories .body1{
+  margin: 0 auto 24px auto;
+  text-align: center;
+  width: 66.02%;
+}
+/* User Flows */
+.flows{
+  background-color: #757575;
+}
+.flows h4, .flows h2{
+  color: #FFFFFF;
+}
+.flows .body1{
+  color: #FFFFFF;
+  margin: 0 auto;
+  width: 66.10%;
+}
+.flows .body2{
+  color: #FFFFFF;
+}
+.flows .caption{
+  color: #FFFFFF;
+	margin-top: 40px;
+	text-align: center;
+}
+.flows div{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+.flows div:nth-of-type(1){
+	margin-bottom: 80px;
+}
+/* Wireframes */
+.wireframes{
+  background-color: #F7F7F7;
+  padding-bottom: 40px;
+}
+.wireframes a{
+  color: #282828;
+}
+.wireframes img{
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 84.54%;
+}
+.wireframes .caption{
+  margin-bottom: 24px;
+}
+.wireframes .body1{
+  margin: 0 auto;
+  padding-bottom: 16px;
+  width: 65.86%;
+}
+.wireframes .body2{
+  margin-bottom: 32px;
+  text-align: center;
+}
+/* Branding */
+#branding .parallaxChild{
+  background-image: url("../images/cloud_collab/branding_background_mobile.jpg");
+	background-position: center;
+}
+#branding h1{
+  color: #FFFFFF;
+}
+#branding p{
+  color: #FFFFFF;
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+#branding .body1{
+  margin: 0 auto 26px auto;
+  text-align: left;
+  width: 66.01%;
+}
+#branding .button{
+  margin-top: 32px;
+}
+/* Moodboard */
+.mood{
+  background-color: #F7F7F7;
+}
+.mood img{
+  display: block;
+  margin: 0 auto 40px auto;
+  width: 250px;
+}
+.mood .body1{
+  width: 81.44%;
+}
+.mood .body2{
+  text-align: center;
+}
+/* Logo */
+.logo img{
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 72.46%;
+}
+.logo .body1:nth-of-type(1){
+  margin-bottom: 29px;
+}
+.logo .body2:nth-of-type(1){
+  margin-bottom: 29px;
+}
+/* Color Palette */
+.color{
+  background-color: #F7F7F7;
+}
+.color h2{
+  margin-bottom: 0;
+}
+.color img{
+  display: block;
+  margin: 48px auto 40px auto;
+	transform: scale(0);
+  width: 61.11%;
+}
+.color img.animateSize{
+	transform: scale(1);
+}
+.color p{
+  margin: 0 auto;
+  text-align: center;
+  width: 73.29%;
+}
+/* Typography */
+.type h2{
+  text-align: center;
+}
+.type .body1{
+  margin: 0 auto 32px auto;
+  text-align: left;
+  width: 66.1%;
+}
+.type .body2{
+  margin: 0 auto 32px auto;
+  text-align: center;
+  width: 66.1%;
+}
+.type img{
+  display: block;
+  margin: 0 auto;
+  width: 84.54%;
+}
+.type h1{
+  margin-top: 80px;
+}
+/* Iterations to Deliverables */
+#deliver .parallaxChild{
+  background-image: url("../images/cloud_collab/visual_design_background_mobile.png");
+	background-position: center;
+}
+#deliver h1{
+  color: #FFFFFF;
+}
+#deliver .body1{
+  color: #FFFFFF;
+  margin: 0 auto 40px auto;
+  width: 66.09%;
+}
+#deliver .body2{
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+/* Sales Landing Page */
+.landing > img{
+  display: block;
+  margin: 0 auto;
+}
+.landing div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+.landing article img{
+  width: 40px;
+}
+.landing div h2{
+  display: inline;
+  vertical-align: top;
+}
+.landing .body1{
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+.landing .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Dashboard */
+.dash{
+  background-color: #F7F7F7;
+}
+.dash > img{
+  display: block;
+  margin: 0 auto;
+}
+.dash div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+.dash article img{
+  width: 40px;
+}
+.dash div h2{
+  display: inline;
+  vertical-align: top;
+}
+.dash .body1{
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+.dash .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Modifying Modal Screens */
+.modal > img{
+  display: block;
+  margin: 0 auto;
+}
+.modal div article div{
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 70%;
+}
+.modal article img{
+  width: 40px;
+}
+.modal div h2{
+  display: inline;
+  vertical-align: top;
+}
+.modal .body1{
+  text-align: center;
+  margin: 0 auto;
+  width: 72.1%;
+}
+.modal .body2{
+  text-align: center;
+  width: 72.1%;
+}
+/* Conclusion */
+.conclusion{
+  background-color: #F7F7F7;
+}
+.conclusion p:nth-of-type(1){
+  margin-bottom: 22px;
+}
+.conclusion .body1{
+  width: 98.34%;
+}
+@media screen and (min-width: 600px){
+    /* Projects Page */
+    /* Work Opening Image */
+    .hero img:nth-of-type(1) {
+        max-height: none;
+    }
+    .hero img:nth-of-type(2){
+        width: 50%;
+    }
+    /* Case Study Name Summary */
+    .subnav{
+        height: 48px;
+        justify-content: center;
+    }
+    .subnav a{
+        font-size: 16px;
+        margin: 0 2%;
+    }
+    #name img[alt="Case Study Name script"]{
+        width: 35%;
+    }
+    #name h4{
+        font-size: 20px;
+        margin: 32px auto 40px auto;
+        width: 65.94%;
+    }
+    #name h2{
+        text-align: center;
+    }
+    #name .button{
+        margin-bottom: 0;
+    }
+    .roles{
+        display: flex;
+    }
+    .roles img{
+        max-height: none;
+        width: 126px;
+    }
+    .roles article{
+        display: inline-block;
+        margin-bottom: 0;
+        width: 33%;
+    }
+    .roles article:nth-of-type(2){
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .roles article h2{
+        font-size: 32px;
+        margin-top: 48px;
+    }
+    .roles li{
+        font-size: 22px;
+    }
+    .borders{
+        border-left: 2px solid #757575;
+        border-right: 2px solid #757575;
+    }
+    /* Challenge */
+    #challenge .parallaxChild{
+        background-image: url("../images/cloud_collab/challenge_background.jpg");
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #challenge h4{
+        width: 66.01%;
+    }
+    /* Solution */
+    .solution{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .solution .desktop{
+        display: flex;
+    }
+    .solution .desktop div{
+        width: 50%;
+    }
+    .solution h2{
+        margin: 0 0 24px 0;
+    }
+    /* User Research */
+    .userResearch .desktop{
+        display: flex;
+    }
+    .userResearch div{
+        padding-bottom:56px;
+        width: 50%;
+    }
+    .userResearch article.desktop div img + p{
+        margin-top: 24px;
+    }
+    /* Statistics */
+    .stats{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stats article{
+        width: 50%;
+    }
+    .stats article div{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .stats h4{
+        margin: 0 auto 24px auto;
+    }
+    .stats article:nth-of-type(2) h4{
+        margin: 0 auto 32px auto;
+    }
+    .stats p:nth-of-type(even){
+        font-size: 30px;
+    }
+    .stats article:nth-of-type(2) p:nth-of-type(odd){
+        padding-top: 24px;
+    }
+    /* Competitive Analysis */
+    .competitive .desktop{
+        display: flex;
+    }
+    .competitive .desktop div{
+        width: 50%;
+    }
+    /* User Personas */
+    .personas article{
+        display: flex;
+    }
+    .personas article > div{
+        width: 33%;
+    }
+    .personas h4, .personas h3, .personas h2{
+        text-align: center;
+    }
+    .personas h2{
+        margin-bottom: 0;
+    }
+    /* User Stories */
+    .stories h2, .stories h4{
+        text-align: center;
+    }
+    td.caption{
+        width: auto;
+    }
+    /* User Flows */
+    .flows h2, .flows h4{
+        text-align: center;
+    }
+    /* Wireframes */
+    .wireframes h2, .wireframes h4{
+        text-align: center;
+    }
+    /* Branding */
+    #branding .parallaxChild{
+        background-image: url("../images/cloud_collab/branding_background.jpg");
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #branding h1, #branding .body1{
+        text-align: center;
+        width: 66.01%;
+    }
+    #branding h1 + p.body1{
+        margin-bottom: 32px;
+    }
+    /* Moodboard */
+    .mood .desktop{
+        display: flex;
+    }
+    .mood .desktop div{
+        padding: 0 5%;
+        width: 50%;
+    }
+    .mood h2{
+        margin: 0 0 24px 0;
+    }
+    .mood h4{
+        margin: 0;
+    }
+    /* Logo */
+    .logo img{
+        width: 75%;
+    }
+    .logo .desktop{
+        display: flex;
+    }
+    .logo .desktop div{
+        width: 50%;
+    }
+    .logo .desktop div:nth-of-type(1){
+        padding: 0 5%;
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .logo h2{
+        margin: 0 0 24px 0;
+    }
+    .logo h4{
+        margin: 0;
+    }
+    /* Color Palette */
+    .color h4{
+        text-align: center;
+    }
+    .color h2{
+        text-align: center;
+    }
+    .color article{
+        display: flex;
+    }
+    .color article div{
+        width: 33%;
+    }
+    /* Typography */
+    .type{
+        display: flex;
+    }
+    .type article{
+        width: 50%;
+    }
+    .type article:nth-of-type(2){
+        align-self: center;
+    }
+    .type h2{
+        text-align: left;
+        width: 66.1%;
+    }
+    .type h4{
+        text-align: left;
+        width: 66.1%;
+    }
+    .type img{
+        width: 58.53%;
+    }
+    /* Iterations to Deliverables */
+    #deliver .parallaxChild{
+        background-image: url("../images/cloud_collab/visual_design_background.png");
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    /* Sales Landing Page */
+    .difference h2, .difference h4{
+        text-align: center;
+    }
+    .difference > img{
+        width: 84.54%;
+    }
+    .difference div{
+        display: flex;
+    }
+    .difference div article{
+        width: 33%;
+    }
+    .difference div article div{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .difference div img{
+        height: 40px;
+    }
+    .difference div h2{
+        margin: 0 0 24px 8px;
+        width: auto;
+    }
+    /* Conclusion */
+    .conclusion h2, .conclusion h4{
+        text-align: center;
+    }
+    .conclusion div{
+        display: flex;
+    }
+    .conclusion article{
+        padding: 0 7%;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1000px){
+    /* Moodboard */
+    .mood img{
+        margin: 0 auto;
+        width: 400px;
+    }
+}

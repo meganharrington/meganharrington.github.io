@@ -1,0 +1,98 @@
+/* Hero Image Styles */
+.hero{
+    padding: 0;
+    position: relative;
+}
+.hero img{
+    position: relative;
+    display: inline-block;
+}
+.hero h1{
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    line-height: 137.99%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+/* Craving Styles */
+.craving{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.craving img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.craving article .caption{
+    margin: 16px auto 30px;
+}
+/* Cloud Collab Styles */
+.cloudcollab{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F7F7F7;
+}
+.cloudcollab img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+.cloudcollab article .caption{
+    margin: 16px auto 30px;
+}
+.cloudcollab article:nth-of-type(2){
+    order: -1;
+    margin-bottom: 32px;
+}
+/* Tablet/Labtop Specifics */
+@media screen and (min-width: 600px){
+    .hero h1{
+        font-size: 64px;
+    }
+    .craving{
+        flex-flow: row nowrap;
+    }
+    .craving article{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .craving img{
+        width: 50%;
+    }
+    .craving article .caption{
+        text-align: left;
+    }
+    .craving .button {
+        display: block;
+        margin-left: 10.145%;
+    }
+    .cloudcollab{
+        flex-flow: row nowrap;
+    }
+    .cloudcollab article{
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .cloudcollab img{
+        width: 100%;
+    }
+    .cloudcollab article .caption{
+        text-align: left;
+    }
+    .cloudcollab .button {
+        display: block;
+        margin-left: 10.145%;
+    }
+    .cloudcollab article:nth-of-type(2){
+        order: 2;
+    }
+}

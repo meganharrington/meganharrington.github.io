@@ -1,0 +1,141 @@
+.about .animateLeft{
+	animation-duration: 1.25s;
+	animation-name: slideinleft;
+	color: #282828;
+}
+.about .animateRight{
+	animation-duration: 1.25s;
+	animation-name: slideinright;
+	color: #282828;
+}
+/* About Page */
+/* Opening Screen */
+.intro{
+	display: flex;
+	flex-flow: row wrap;
+  margin-top: 0;
+  padding: 0;
+}
+.intro article{
+	width: 50%;
+}
+.intro h1{
+  color: #282828;
+  font-size: 22px;
+  text-align: center;
+	margin-top: 40%;
+	width: 100%;
+}
+/* Bio */
+.about{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 56px 0;
+}
+.about .aboutPic{
+	width: 28%;
+}
+.about .aboutText{
+	border-left: 5px solid #757575;
+	margin-left: 5px;
+	overflow: hidden;
+	width: 68%;
+}
+.about .body1{
+  margin-bottom: 29px;
+  width: 90.77%;
+}
+.about img{
+	margin-left: 10px;
+	margin-top: -27.5%;
+}
+.about p{
+	color: #FFFFFF;
+	margin: 0 auto 96px auto;
+}
+.about article:last-of-type p{
+	margin-bottom: 0;
+}
+@media screen and (min-width: 600px){
+  /* About Page */
+  /* About Opening Image */
+  .intro h1{
+    font-size: 62px;
+    margin-top: 30%;
+    text-align: center;
+    width: 100%;
+  }
+  /* Biography */
+  .about{
+    flex-flow: column nowrap;
+    margin: 56px 40px;
+  }
+  .about article{
+    border-right: 7px solid #757575;
+  }
+  .about .aboutPic, .about .aboutText{
+    width: 50%;
+  }
+  .about article.aboutText{
+    border-left: none;
+    margin-left: 0;
+    padding-top: 40px;
+  }
+  .about .aboutPic img{
+    margin-top: -11.5%;
+    width: 60%;
+  }
+  .about article:nth-of-type(1) img,
+  .about article:nth-of-type(5) img,
+  .about article:nth-of-type(9) img{
+    box-sizing: border-box;
+    margin-left: 41.5%;
+  }
+  .about article:nth-of-type(3),
+  .about article:nth-of-type(4),
+  .about article:nth-of-type(7),
+  .about article:nth-of-type(8){
+    border-left: 7px solid #757575;
+    border-right: none;
+    margin-left: 50%;
+  }
+  .about article:nth-of-type(3) img,
+  .about article:nth-of-type(7) img{
+    margin-left: -8px;
+  }
+  .about article:nth-of-type(9){
+    border-right: none;
+  }
+  .about article:nth-of-type(9) img{
+    margin-top: -12%;
+  }
+  .about article:nth-of-type(10){
+    border-right: none;
+  }
+  .about .desktop{
+    display: flex;
+    padding: 0 8.73% 0 4.68%;
+  }
+  .about .desktop div{
+    width: 50%;
+  }
+  .about h2{
+    font-size: 32px;
+    margin: 0 0 32px 0;
+    text-align: left;
+  }
+  .about img{
+    margin: 0 auto;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1000px){
+  /* About Page Opening Screen */
+  .intro{
+    min-height: 350px;
+  }
+  .intro h1{
+      width: 100%;
+      transform: translateY(20%);
+  }
+}

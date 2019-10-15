@@ -1,0 +1,128 @@
+/* Universal Settings */
+.button{
+  background-color: #F8CDC4;
+}
+.border{
+  border-color: #F8CDC4;
+}
+/* Roles Subnavbar */
+.subnav{
+  background-color: #F8CDC4;
+}
+/* Name Section */
+#name img[alt="Craving Logo"]{
+  display: block;
+  margin: 0 auto;
+  width: 36%;
+}
+/* Challenge Section */
+#challenge .parallaxChild{
+  background-image: url("../images/craving/ux_process.png");
+}
+.userResearch .button:hover{
+  color: #FFFFFF;
+}
+/* Competitive Analysis Section */
+.competitive .desktop img{
+  width: 55%;
+}
+/* Flows Section */
+.flows .desktop div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+  width: 50%;
+}
+.flows h2, .flows h4{
+  text-align: left;
+}
+.flows .body1{
+  width: 79.71%;
+}
+.flows a{
+  color: #FFFFFF;
+}
+.flows div img{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+.flows .body1, .flows .body2, .flows li{
+  margin-bottom: 26px;
+}
+.flows ul{
+  list-style: inside;
+}
+/* Wireframes Section */
+.wireframes img{
+  margin-top: 32px;
+  width: 70%;
+}
+/* Branding Section */
+#branding .parallaxChild{
+  background-image: url("../images/craving/branding.png");
+}
+/* Color Section */
+.color h2{
+  margin-bottom: 24px;
+}
+.color img{
+  transform: scale(1);
+}
+/* Typography Section */
+.type{
+  display: block;
+}
+.type h2,.type h4{
+  text-align: center;
+}
+.type img{
+  width: 90%;
+}
+/* Visual Design Section */
+#deliver .parallaxChild{
+  background-image: url("../images/craving/visual_design.png");
+}
+/* Sign Up Page, Dessert Search Page, Restaurant Profile Page */
+.changes h4{
+  text-align: center;
+}
+.changes h2{
+  margin-bottom: 48px;
+  text-align: center;s
+}
+.changes > img {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+.changes ul{
+  margin: 48px auto 0 auto;
+  width: 80%;
+}
+.changes li{
+  display: flex;
+  align-items: center;
+}
+.changes ul img{
+  height: 40px;
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 40px;
+}
+.changes .body2{
+  text-align: left;
+  margin-bottom: 16px;
+}
+.dessert{
+  background-color: #F7F7F7;
+}
+/* Dessert Quick Search Results */
+/* Restaurant Profile */
+/* Tablet Specifics */
+@media screen and (min-width: 600px){
+  .flows article.desktop{
+    display: flex;
+  }
+}
